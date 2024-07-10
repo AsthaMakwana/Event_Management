@@ -1,0 +1,254 @@
+:root {
+  --bd-ff-body: 'Inter', sans-serif;
+  --bd-ff-heading: 'Inter', sans-serif;
+  --bd-ff-fontawesome: "Font Awesome 6 Pro";
+
+  --clr-common-white: #ffffff;
+  --clr-common-black: #000000;
+  --clr-common-placeholder: #CDCDCD;
+  --clr-common-heading: #333333;
+  --clr-common-body-text: #111111;
+  --clr-theme-1: #F7426F;
+  --clr-theme-2: #ED1616;
+  --clr-theme-3: #FFA300;
+  --clr-text-primary: #ffffff;
+  --clr-text-secondary: #111111;
+  --clr-text-1: #154A63;
+  --clr-text-2: #e1e1e1;
+  --clr-text-3: #333333;
+  --clr-text-4: #858585;
+  --clr-text-5: #7C7C7C;
+  --clr-text-6: #D9D9D9;
+  --clr-text-7: #C1C1C1;
+  --clr-text-8: #ADADAD;
+  --clr-text-9: #9D9D9D;
+  --clr-text-10: #7A7A7A;
+  --clr-text-11: #404040;
+  --clr-text-12: #707070;
+  --clr-text-13: #F87A58;
+  --clr-text-14: #BABABA;
+  --clr-text-15: #C75773;
+  --clr-text-16: #705221;
+  --clr-text-17: #FF9F03;
+  --clr-text-18: #3A6D3A;
+  --clr-text-19: #2E2E2E;
+  --clr-text-20: #111111;
+  --clr-bg-gray-1: #F6F6F6;
+  --clr-bg-footer: #0E1C41;
+  --clr-bg-pink: #FFF6F9;
+  --clr-bg-1: #FFFCFB;
+  --clr-bg-2: #F1F1F1;
+  --clr-bg-3: #FFF1F5;
+  --clr-bg-4: #111111;
+  --clr-bg-5: #202020;
+  --clr-bg-6: #2C2C2C;
+  --clr-bg-7: #414141;
+  --clr-bg-8: #323232;
+  --clr-bg-9: #363636;
+  --clr-bg-10: #f2f2f2;
+  --clr-bg-11: #FBFBFB;
+  --clr-bg-12: #EBEBEB;
+  --clr-bg-13: #FAFAFA;
+  --clr-bg-14: #C4C4C4;
+  --clr-bg-15: #D9D9D9;
+  --clr-bg-16: #FFF9FA;
+  --clr-bg-17: #FFF3F6;
+  --clr-bg-18: #FFF0F0;
+  --clr-bg-19: #FFF7EA;
+  --clr-bg-20: #FAFFF8;
+  --clr-bg-21: #FFF1F5;
+  --clr-border-1: #d9d9d9;
+  --clr-border-2: #404040;
+  --clr-border-3: #CECECE;
+  --clr-border-4: #E6E6E6;
+  --clr-footer-1: #878787;
+  --clr-gradient-1: linear-gradient(90deg, #f7426f 0%, #f87a58 100%);
+  --clr-gradient-2: linear-gradient(90deg, #FF6339 0%, #FF2259 100%);
+  --clr-gradient-3: linear-gradient(90deg, #FEA501 0%, #E64652 96.62%);
+  --clr-gradient-4: linear-gradient(134.41deg, #FFA300 3.81%, #F87A58 97.09%);
+  --clr-gradient-5: linear-gradient(90deg, #FEA501 0%, #E64652 96.62%);
+  --clr-gradient-6: linear-gradient(to bottom, #FF9C03, #FF9C03, #EE2E67, #EE2E67);
+  --clr-gradient-7: linear-gradient(91.11deg, #F7426F -2.47%, #F87A58 91.34%);
+  --clr-gradient-8: linear-gradient(91.95deg, #F87A58 0%, #F7426F 99.23%);
+  --clr-gradient-9: linear-gradient(90deg, #4295F7, #B258F8, #B258F8, #4295F7);
+  --clr-gradient-10: linear-gradient(90deg, #F7C442, #F87A58, #F87A58, #F7C442);
+  --clr-gradient-11: linear-gradient(90deg, #F721E2, #DB3A64, #DB3A64, #F721E2);
+  --clr-gradient-12: linear-gradient(90deg, #21EAF7, #3A71DB, #3A71DB, #21EAF7);
+  --clr-gradient-13: linear-gradient(90deg, #25F721, #099E33, #099E33, #25F721);
+  --clr-gradient-14: linear-gradient(90deg, #f87a58, #f7426f, #f7426f, #f87a58);
+  --clr-gradient-15: linear-gradient(180deg, #F87A58 0%, #F7426F 100%);
+
+  --bd-fw-normal: normal;
+  --bd-fw-thin: 100;
+  --bd-fw-elight: 200;
+  --bd-fw-light: 300;
+  --bd-fw-regular: 400;
+  --bd-fw-medium: 500;
+  --bd-fw-sbold: 600;
+  --bd-fw-bold: 700;
+  --bd-fw-ebold: 800;
+  --bd-fw-black: 900;
+
+  --bd-fs-body: 16px;
+  --bd-fs-p: 16px;
+  --bd-fs-h1: 80px;
+  --bd-fs-h2: 50px;
+  --bd-fs-h3: 24px;
+  --bd-fs-h4: 20px;
+  --bd-fs-h5: 16px;
+  --bd-fs-h6: 14px;
+}
+
+.breadcrumb__main {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 25px;
+}
+
+.breadcrumb__wrapper {
+  padding: 35px 0 15px;
+  border-bottom: 1px solid grey;
+}
+
+.breadcrumb__menu ul {
+  display: inline-flex;
+  gap: 30px;
+  justify-content: center;
+  margin-bottom: -1rem;
+}
+
+.breadcrumb__menu ul li {
+  list-style: none;
+  position: relative;
+  /* line-height: 1; */
+}
+
+.breadcrumb__menu ul li:not(:last-child)::after {
+  display: inline-block;
+  content: "/";
+  position: absolute;
+  inset-inline-end: -18px;
+  top: 50%;
+  font-family: var(--bd-ff-fontawesome);
+  font-size: 2rem;
+  transform: translateY(-50%) rotateY(40deg);
+  /* color: #fff; */
+}
+
+.breadcrumb__menu ul li .active span {
+  color: var(--clr-theme-1);
+}
+
+.breadcrumb__menu ul li span {
+  font-size: 16px;
+  text-transform: capitalize;
+  font-weight: var(--bd-fw-medium);
+  /* color: #fff; */
+  font-size: 1.3rem;
+}
+
+.breadcrumb__menu ul li span a {
+  font-weight: var(--bd-fw-medium);
+  font-size: 1.3rem;
+  text-decoration: none;
+  /* color:#fff ; */
+}
+
+.breadcrumb__menu ul li span a:hover {
+  color: var(--clr-theme-1);
+}
+
+.breadcrumb__inner {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.breadcrumb__icon i {
+  color: var(--clr-text-8);
+}
+
+.breadcrumb__tab .nav-link {
+  font-size: 14px;
+  padding: 6px 16px;
+}
+
+.breadcrumb__tab .nav-tabs {
+  display: flex;
+  gap: 10px;
+  border: 0;
+}
+
+.breadcrumb__tab .nav-tabs .nav-link {
+  border: 1px solid var(--clr-border-1);
+  color: var(--clr-text-20);
+  font-weight: var(--bd-fw-medium);
+  text-transform: capitalize;
+  border-radius: 6px
+}
+
+.breadcrumb__tab .nav-tabs .nav-link .active {
+  color: var(--clr-common-white);
+  position: relative;
+  z-index: 5;
+  border: transparent;
+}
+
+.breadcrumb__tab .nav-tabs .nav-link::after {
+  position: absolute;
+  content: "";
+  height: 100%;
+  width: 100%;
+  top: 0;
+  inset-inline-start: 0;
+  background: var(--clr-gradient-7);
+  z-index: -1;
+  border-radius: 6px;
+} 
+.offcanvas__overlay {
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  background: var(--clr-common-black);
+  z-index: 900;
+  top: 0;
+  opacity: 0;
+  visibility: hidden;
+  right: 0;
+  -webkit-transition: all 0.3s ease-out 0s;
+  -moz-transition: all 0.3s ease-out 0s;
+  -ms-transition: all 0.3s ease-out 0s;
+  -o-transition: all 0.3s ease-out 0s;
+  transition: all 0.3s ease-out 0s;
+}
+.offcanvas__overlay.overlay-open {
+  opacity: 0.8;
+  visibility: visible;
+}
+.offcanvas .signin-area.open {
+  opacity: 0.6;
+  visibility: visible;
+  -webkit-transition: all 0.3s ease-out 0s;
+  -moz-transition: all 0.3s ease-out 0s;
+  -ms-transition: all 0.3s ease-out 0s;
+  -o-transition: all 0.3s ease-out 0s;
+  transition: all 0.3s ease-out 0s;
+}
+
+.sidebar__toggle {
+  cursor: pointer;
+}
+
+@media (max-width: 992px) {
+  .app__offcanvas-overlay.overlay-open {
+    background: rgba(0, 0, 0, 0.6);
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+    z-index: 10;
+  }
+}

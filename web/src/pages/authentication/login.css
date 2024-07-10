@@ -1,0 +1,208 @@
+.signin__area {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    margin: 6rem 0;
+  }
+  
+  .sign__main-wrapper {
+    display: grid;
+    -webkit-border-radius: 6px;
+    -moz-border-radius: 6px;
+    -o-border-radius: 6px;
+    -ms-border-radius: 6px;
+    border-radius: 6px;
+    grid-template-columns: 1fr 527px;
+    overflow: hidden;
+    margin: 30px 0;
+    width: 1130px;
+    max-width: 1130px;
+  }
+
+  @media (max-width: 575px), only screen and (min-width: 576px) and (max-width: 767px), only screen and (min-width: 768px) and (max-width: 991px) {
+    .sign__main-wrapper {
+      grid-template-columns: 1fr;
+    }
+  }
+  @media only screen and (min-width: 992px) and (max-width: 1199px) {
+    .sign__main-wrapper {
+      grid-template-columns: 1fr 50%;
+    }
+  }
+  .sign__left {
+    padding: 20px 70px;
+  }
+  @media only screen and (min-width: 576px) and (max-width: 767px), only screen and (min-width: 768px) and (max-width: 991px), only screen and (min-width: 992px) and (max-width: 1199px) {
+    .sign__left {
+      padding: 43px 50px;
+    }
+  }
+  @media (max-width:450px) {
+    .sign__left {
+      padding: 43px 20px;
+    }
+  }
+  .sign__header {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin-bottom: 4rem;
+  }
+  .sign__logo a{
+    color: #000;
+    text-decoration: none;
+    font-size: 1.5rem;
+  }
+  .sign__logo a:hover{
+    color: #F7426F;
+  }
+  .sign__link {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    align-items: center;
+    gap: 20px;
+  }
+  .sign__link-text {
+    color: #707070;
+    text-decoration: none;
+  }
+  .sign__link-text:hover {
+    color: #F7426F;
+    text-decoration: none;
+  }
+  .sign__link-active {
+    color: #F7426F;
+    font-weight: 600;
+    text-decoration: none;
+  }
+  .sign__link-active:focus {
+    color: #F7426F;
+  }
+  .sign__link-active:hover {
+    color: #F7426F;
+  }
+  .sign__input {
+    position: relative;
+    margin-bottom: 20px;
+    background: #fbfbfb;
+  }
+  .sign__input span {
+    position: absolute;
+    top: 14px;
+    inset-inline-start: 20px;
+  }
+  .sign__input span i {
+    color: #000;
+  }
+  .sign__input input {
+    color: #fbfbfb;
+    width: 100%;
+    height: 55px;
+    border: 1px solid #000;
+    padding-inline-start: 50px;
+    padding-inline-end: 20px;
+    -webkit-border-radius: 6px;
+    -moz-border-radius: 6px;
+    -o-border-radius: 6px;
+    -ms-border-radius: 6px;
+    border-radius: 6px;
+    background: transparent;
+  }
+  .sign__title {
+    font-weight: 600;
+    color: #000;
+    margin-bottom: 15px;
+  }
+  @media (max-width:450px) {
+    .sign__title {
+      font-size: 20px;
+    }
+  }
+  .sign__title-wrapper{
+    margin-bottom:3rem ;
+  }
+  .sign__title-wrapper > p {
+    color: #9d9d9d;
+    margin-bottom: 0;
+  }
+  .sign__action {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    justify-content: space-between;
+    gap: 15px;
+    margin-bottom: 25px;
+    flex-wrap: wrap;
+  }
+  .sign__forget span a{
+    color: #000;
+    text-decoration: none;
+  }
+  .sign__forget span a:hover {
+    color: #F7426F;
+  }
+
+  .input__btn {
+    font-size: 16px;
+    background:linear-gradient(90deg, #f87a58, #f7426f, #f7426f, #f87a58);
+    color: #fff;
+    font-weight:500;
+    border: 0;
+    padding: 0 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    height: 55px;
+    border-radius: 6px;
+}
+
+  .if__account {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    align-items: flex-end;
+    justify-content: center;
+    margin-top: 1rem;
+  }
+  .if__account p {
+    margin-bottom: 0;
+    color: #707070;
+  }
+  .if__account p a {
+    color: #000;
+    font-weight: 500;
+    text-decoration: none;
+  }
+  .if__account p a:hover {
+    color: #F7426F;
+  }
+  
+  .sign__input-thumbLogin{
+    height: 100%;
+    background: url('https://codeskdhaka.com/html/expovent-prev/expovent/assets/img/sign/signin.jpg');
+  }
+  
+  .sign__forget span {
+    color: #000;
+  }
+  .sign__check-text {
+    color: #404040;
+  }
+  .sign__logo .logo-white {
+    display: none;
+  }

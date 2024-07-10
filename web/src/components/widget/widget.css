@@ -1,0 +1,77 @@
+
+.expovent__count-item{
+    display: flex;
+    align-items: center;
+    gap: 21px;
+    justify-content: space-between;
+    /* background: var(--clr-common-white); */
+    padding: 30px 30px;
+    border-radius: 6px;
+    position: relative;
+    z-index: 5;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.03);
+    transition: .3s;
+    /* background-color: #2c2c2c; */
+}
+.expovent__count-item:hover{
+    background: url('https://codeskdhaka.com/html/expovent-prev/expovent/assets/img/bg/count-bg.png') no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.expovent__count-item:hover{
+    filter: drop-shadow(0px 4px 35px rgba(247, 66, 111,0.5));
+}
+.expovent__count-item:hover .expovent__count-number {
+    color: var(--clr-common-white);
+}
+.expovent__count-item:hover .expovent__count-thumb {
+    opacity: 1;
+}
+.expovent__count-item:hover .expovent__count-text {
+    color: var(--clr-common-white);
+}
+.expovent__count-item:hover .expovent__count-icon {
+    background-color: transparent;
+    border-color: var(--clr-common-white);
+    color: #fff;
+}
+.expovent__count-item:hover .expovent__count-icon i{
+    color: #fff;
+}
+.expovent__count-thumb{
+    position: absolute;
+    top: 0;
+    inset-inline-start: 0;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    border-radius: 6px;
+}
+.expovent__count-number {
+    font-weight: 600;
+    margin-bottom: 10px;
+    font-size: 30px;
+    font-weight: 700;
+    color: #3f3f3f;
+}
+.expovent__count-text{
+    color: #727272;
+    font-size: 1.3rem;
+}
+.expovent__count-icon {
+    display: flex;
+    height: 60px;
+    width: 60px;
+    background-color: #f1f1f1;
+    border: 1px solid var(--clr-bg-21);
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    transition:.3s;
+    
+}
+.expovent__count-icon i{
+    font-size: 30px;
+    color: #000;
+}

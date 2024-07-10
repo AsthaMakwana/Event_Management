@@ -1,0 +1,55 @@
+const storage = multer.diskStorage({
+    destination:'images',
+    filename:(req,file,cb)=>{
+        cb(null,file.originalname)
+    }
+})
+const upload = multer({ storage: storage });
+
+router.post("/upload", upload.single('logo'), async (req, res) => {
+    if (!req.file) {
+        console.log("No file upload");
+    } else {
+        console.log(req.file.filename);
+        var imgsrc = 'http://127.0.0.1:3000/images/' + req.file.filename;
+        // TODO
+        try {
+            const updatedSponser = await Sponser.findByIdAndUpdate(
+                req.body.sponserId,
+                { $set: { sponserLogo: imgsrc } },
+                { new: true } // To return the updated document
+            );
+            if (!updatedSponser) {
+                return res.status(404).json({ success: false, message: "Sponser not found" });
+            }
+            res.json({ success: true, message: "File uploaded"});
+        } catch (err) {
+            console.error(err);
+            res.status(500).send("Error uploading file");
+        }
+    }
+});
+
+
+
+
+
+    // console.log(file)
+        // const formData = new FormData();
+    // formData.append('logo', e.target.files[0]);
+
+    // try {
+    //   const response = await axios.post('http://localhost:5000/api/event/upload', formData, {
+    //     headers: {
+    //       'Content-Type': 'multipart/form-data',
+    //     },
+    //   });
+
+    //   console.log(formData)
+    //   setFiles(response.data.files);
+    //   setMessage(response.data.message);
+    //   console.log(files)
+    // } catch (error) {
+    //   console.error(error);
+    //   setMessage('Error uploading file');
+    // }

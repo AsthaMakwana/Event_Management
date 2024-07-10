@@ -1,0 +1,40 @@
+.main {
+    margin-top: 2rem;
+    border-radius: 6px;
+}
+
+@media screen and (max-width:800px) {
+    .main {
+        flex-wrap: wrap;
+    }
+    .profile__left {
+        border-inline-end: 0;
+    }
+}
+@media screen and  (min-width:800px) {
+    .profile__left {
+        border-inline-end: 1px solid #404040;
+    }
+}
+
+.img {
+    display: flex;
+}
+
+.imgp{
+    display: flex;
+    margin-left: auto;
+    justify-content:flex-end;
+}
+
+.edit {
+    top: 0;
+}
+
+.edit:hover {
+    cursor: pointer;
+}
+
+.info {
+    font-size: 1.2rem;
+}
